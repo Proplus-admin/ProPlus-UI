@@ -1,0 +1,172 @@
+<ng-template #mantrasHeader>
+    <div class="text-center blog-view">
+        <div class="d-none d-sm-block">
+            <iframe id="videobgframe-1900443754" class="videobgframe" width="100vw" height="70vh"
+                src="https://www.youtube.com/embed/lH2Ey30oboI?autoplay=1&mute=1&loop=1&controls=0&playlist=lH2Ey30oboI" frameborder="0"
+                style="min-height: 70vh; min-width: 100vw;"></iframe>
+        </div>
+        <div class="d-sm-none">
+            <iframe id="videobgframe-1900443754" class="videobgframe" width="100vw" height="300px"
+                src="https://www.youtube.com/embed/lH2Ey30oboI?autoplay=1&mute=1&loop=1&controls=0&playlist=lH2Ey30oboI" frameborder="0"
+                style="min-height: 300px; min-width: 100vw;"></iframe>
+        </div>
+        <div class="caption">
+            <h1 class="text-white">The Mantras</h1>
+            <h5 class="text-white">in Cayman Islands</h5>
+        </div>
+    </div>
+</ng-template>
+<div class="mantras-home">
+    <div class="d-none d-sm-block">
+        <app-page-header [image]="image" [blogHeight]="'70vh'" [template]="mantrasHeader"></app-page-header>
+    </div>
+    <div class="d-sm-none">
+        <app-page-header [image]="image" [blogHeight]="'300px'" [template]="mantrasHeader"></app-page-header>
+    </div>
+
+    <section class="p-4">
+        <div class="container text-center">
+            <h4>Our mission</h4>
+            <p>To deliver a relaxed and refined buying and selling experience. We stand out from the rest <br>
+                with our standards of integrity, expertise and sophistication.</p>
+        </div>
+    </section>
+
+    <section class="theme-bg p-2">
+        <div class="container">
+            <div class="row d-flex align-items-center text-center">
+                <div class="col-12 col-sm-6">
+                    <h5>RESERVE YOUR PROPERTY AT THE MANTRAS ?</h5>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-12 col-sm-6">
+                            <p class="text-light">CALL US TODAY</p>
+                            <h5>+1 345 923 0730</h5>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <button class="btn btn-light" routerLink="/contact">RESERVE NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="p-3">
+                    <h1>About The Mantras</h1>
+                    <p>Another development brought to you by Pro Plus Reality Limited who have built most notable
+                        projects like Lakeland Villas and Ocean Reach on Old Crew Road, Royal Pine on Linford Pierson
+                        bypass, Landmark Square across from Strand and many more.
+                    </p>
+                    <p>Prime South Sound Eco Friendly Development across from the most exclusive sandy beach. Close
+                        proximity to Walkers Road and downtown, make this a prime development. </p>
+                    <h5>This gated community features : </h5>
+                    <ul>
+                        <li>• Location, location, location</li>
+                        <li>• Affordable price</li>
+                        <li>• Security gated access</li>
+                        <li>• Trellis for shaded car park</li>
+                        <li>• Insulated Concrete Form Walls</li>
+                        <li>• Impacted rated windows</li>
+                        <li>• Solar Ready</li>
+                        <li>• Propane Gas appliances</li>
+                        <li>• Two swimming pools, cabana and kids play area</li>
+                        <li>• Private fenced backyard for each unit</li>
+                        <li>• Security Alarm for each unit</li>
+                        <li>• High speed Fibre ready</li>
+                        <li>• Ducted AC with high efficiency rating</li>
+                        <li>• Designer landscaping</li>
+                        <li>• State of the art interior finishing’s</li>
+                        <li>• Much more to mention…</li>
+                    </ul>
+                    <p>With the above features you can reduce your utilities to very minimum and live in a safe home.
+                        Reach your home within minutes from School or office and Relax by Pool side, exercise at the gym
+                        or enjoy the view from third floor balcony.</p>
+                    <p>BOOK NOW..!! Starting at CI$699,000 only. </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 bg-white p-2">
+                <h1>The Mantras video >></h1>
+                <iframe width="100%" height="639" src="https://www.youtube.com/embed/lH2Ey30oboI" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-2">
+        <div style="height: 60vh">
+            <app-map-box [lat]="42.704730" [long]="-84.626270"></app-map-box>
+        </div>
+    </section>
+
+    <section class="portpolio">
+        <div class="row">
+            <div class="col-md-4 p-0">
+                <img src="../../../../../assets/images/mantras/3_19052_190804_Bedroom_3_1-1280w.jpg"
+                    class="img-fluid">
+            </div>
+            <div class="col-md-8 p-0">
+                <div class="row">
+                    <div class="col-md-6 p-0">
+                        <img src="../../../../../assets/images/mantras/2_190804_19052_Living_3-640w.jpg"
+                            class="img-fluid">
+                    </div>
+                    <div class="col-md-6 p-0">
+                        <img src="../../../../../assets/images/mantras/5_19052_190804_Bathroom_3-640w.jpg"
+                            class="img-fluid">
+                    </div>
+                    <div class="col-md-12 p-0">
+                        <img src="../../../../../assets/images/mantras/1_19052-190804_Dining_3-1280w.jpg"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white p-3 pt-5">
+        <div class="container">
+            <div class="d-sm-flex justify-content-between">
+                <button class="btn btn-primary theme-btn"> <a
+                        href="https://irp-cdn.multiscreensite.com/8f4dba7e/files/uploaded/Floor%20Plans%20of%202%20floor.pdf"
+                        target="_blank">2 Bed Floor Plan </a></button>
+                <button class="btn btn-primary theme-btn"><a
+                        href="https://irp-cdn.multiscreensite.com/8f4dba7e/files/uploaded/Floor%20Plans%20of%203%20floor.pdf"
+                        target="_blank">3 Bed Floor Plan </a> </button>
+                <button class="btn btn-primary theme-btn"><a
+                        href="https://irp-cdn.multiscreensite.com/8f4dba7e/files/uploaded/Site%20Plan.pdf"
+                        target="_blank">Site Plan</a> </button>
+            </div>
+
+            <h4 class="theme-clr m-2 mx-0">Schedule A Free Consultation Call</h4>
+
+            <div class="row" [formGroup]="scheduleForm">
+                <div class="col-12 col-sm-4">
+                    <label>Name:</label>
+                    <input type="text" formControlName="name" class="form-control">
+                </div>
+                <div class="col-12 col-sm-4">
+                    <label>Email:</label>
+                    <input type="email" formControlName="email" class="form-control">
+                </div>
+                <div class="col-12 col-sm-4">
+                    <label>Phone:</label>
+                    <input type="phone" formControlName="phone" class="form-control">
+                </div>
+                <div class="col-12">
+                    <label>Message:</label>
+                    <textarea formControlName="message" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end m-3 mx-0">
+                <button class="btn btn-primary theme-btn" [disabled]="scheduleForm.invalid" (click)="submit()">Send
+                    Message</button>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,17 @@
+@import 'variable';
+
+.yarl-home {
+    p, ul > li {
+        font-weight: 300;
+        color: $secondary-clr;
+        line-height: 1.8;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .yarl-home {
+        .slider {
+            height: 70vh;
+        }
+    }
+}

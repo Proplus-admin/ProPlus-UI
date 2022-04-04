@@ -1,0 +1,25 @@
+@import "variable";
+
+.projects-home {
+    padding-bottom: 20px;
+    .project-image {
+        overflow: hidden;
+        height: 300px;
+        margin-bottom: 20px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: 500ms ease;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .projects-home {
+        padding: 50px;
+    }
+}

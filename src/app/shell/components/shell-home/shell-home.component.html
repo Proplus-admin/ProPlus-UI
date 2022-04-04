@@ -1,0 +1,127 @@
+<div class="shell-home d-none d-md-block">
+    <div class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <p> +1 (345) 923-0730 / +1 (345) 928-4834 </p>
+                    <p class="light-text"><i> KY1-1108, PO Box 1290 </i></p>
+                    <p class="light-text"><i> Grand Cayman, Cayman Islands </i></p>
+                </div>
+                <div>
+                    <img [src]="logo" class="logo">
+                </div>
+                <div class="d-flex gap-3">
+                    <a href="https://www.facebook.com/ProplusRealestateCayman" target="_blank"><span
+                            class="social-icon"><i class="fa fa-facebook" aria-hidden="true"></i> </span></a>
+                    <a href="https://www.youtube.com/channel/UCWOsE8EJNrc8xrygvnhHAhA" target="_blank"><span
+                            class="social-icon"><i class="fa fa-youtube-play" aria-hidden="true"></i> </span></a>
+                    <a href="mailto:info@proplusrealestate.com"><span class="social-icon"><i class="fa fa-envelope-o"
+                                aria-hidden="true"></i> </span></a>
+                    <a href="https://web.whatsapp.com/send?phone=+1 345 925 9938" target="_blank"><span
+                            class="social-icon"><i class="fa fa-whatsapp" aria-hidden="true"></i> </span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-nav p-3">
+        <ul class="d-flex justify-content-center">
+            <li><a routerLink="" routerLinkActive="active">Home</a> <span>/</span></li>
+            <li class="main-menu d-flex">
+                <a class="d-flex gap-2"> <!--routerLink="departments" routerLinkActive="active"-->
+                    Our Developments
+                    <span class="chevron-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                    <span class="chevron-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                </a> <span>/</span>
+                <ul class="sub-menu">
+                    <li><a routerLink="/departments/royal-pines">Royal Pines</a></li>
+                    <li><a routerLink="/departments/ocean-reach">Ocean Reach</a></li>
+                    <li><a routerLink="/departments/mantras">The Mantras</a></li>
+                    <li><a routerLink="/departments/yarl">Yarl</a></li>
+                </ul>
+            </li>
+            <li><a routerLink="news" routerLinkActive="active">News</a> <span>/</span></li>
+            <li><a routerLink="contact" routerLinkActive="active">Contact</a> <span>/</span></li>
+            <li><a routerLink="about-us" routerLinkActive="active">About Us</a> </li>
+        </ul>
+    </div>
+</div>
+
+<div class="d-md-none">
+    <div class="sm-shell-home d-md-none">
+        <div class="header">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center header-menu">
+                    <div (click)="isSideNavOpened = true">
+                        <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    </div>
+                    <div>
+                        <img [src]="logo" class="logo">
+                    </div>
+                    <div>
+                        <a href="tel:+1 345 925 9938">
+                            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-side-nav p-3" [class.show-menu]="isSideNavOpened">
+            <span class="close cursor-pointer" (click)="isSideNavOpened = false"><i class="fa fa-times"
+                    aria-hidden="true"></i></span>
+            <ul class="">
+                <li><a (click)="isSideNavOpened = false" routerLink="" routerLinkActive="active">Home</a> </li>
+                <li class="main-menu">
+                    <a class="d-flex gap-2"> <!-- routerLink="departments" routerLinkActive="active"-->
+                        Our Developments
+                        <span class="chevron-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                        <span class="chevron-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a (click)="isSideNavOpened = false" routerLink="/departments/royal-pines">Royal
+                                Pines</a>
+                        </li>
+                        <li><a (click)="isSideNavOpened = false" routerLink="/departments/ocean-reach">Ocean
+                                Reach</a>
+                        </li>
+                        <li><a (click)="isSideNavOpened = false" routerLink="/departments/mantras">The Mantras</a>
+                        </li>
+                        <li><a (click)="isSideNavOpened = false" routerLink="/departments/yarl">Yarl</a></li>
+                    </ul>
+                </li>
+                <li><a (click)="isSideNavOpened = false" routerLink="news" routerLinkActive="active">News</a> </li>
+                <li><a (click)="isSideNavOpened = false" routerLink="contact" routerLinkActive="active">Contact</a>
+                </li>
+                <li><a (click)="isSideNavOpened = false" routerLink="about-us" routerLinkActive="active">About
+                        Us</a>
+                </li>
+            </ul>
+            <a (click)="isSideNavOpened = false" routerLink="contact"><button type="button"
+                    class="btn btn-outline-light">GET IN TOUCH</button></a>
+            <div class="d-flex gap-3 social-icon">
+                <a href="https://www.facebook.com/ProplusRealestateCayman" target="_blank">
+                    <span class="social-icon"><i class="fa fa-facebook" aria-hidden="true"></i> </span></a>
+                <a href="https://www.youtube.com/channel/UCWOsE8EJNrc8xrygvnhHAhA" target="_blank">
+                    <span class="social-icon"><i class="fa fa-youtube-play" aria-hidden="true"></i> </span></a>
+                <a href="mailto:info@proplusrealestate.com">
+                    <span class="social-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i> </span></a>
+                <a href="https://web.whatsapp.com/send?phone=+1 345 925 9938" target="_blank">
+                    <span class="social-icon"><i class="fa fa-whatsapp" aria-hidden="true"></i> </span></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="router-content" [class.side-nav-opened]="isSideNavOpened">
+    <router-outlet></router-outlet>
+</div>
+
+<app-footer></app-footer>
+
+<div class="toast-message" [class.active]="showToaster" [ngClass]="toasterType()">
+    <h5> {{toaster?.type}} </h5>
+    <p> {{toaster?.message}} </p>
+    <span class="loader"></span>
+</div>

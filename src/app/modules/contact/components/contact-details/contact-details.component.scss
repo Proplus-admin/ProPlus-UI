@@ -1,0 +1,23 @@
+@import "variable";
+
+.contact-details-home {
+    .details {
+        padding: 30px;
+    }
+    .map-box {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact-details-home {
+        .details {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+        }
+        .row {
+            height: 400px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import "variable";
+
+.footer {
+    background-color: $light-clr;
+    padding: 50px 0;
+    h5 {
+        color: $white;
+        font-size: 16px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+    }
+    p {
+        color: $white;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}

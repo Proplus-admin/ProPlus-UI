@@ -1,0 +1,29 @@
+<ng-template #contactBlogHeader>
+    <div class="container p-sm-5">
+        <div class="row">
+            <div class="col-0 col-sm-6"></div>
+            <div class="col-12 col-sm-6">
+                <div class="">
+                    <p class="theme-clr">Pro Plus Real Estate Developments </p>
+                    <h2 class="text-white">BOOK A VIEWING</h2>
+                    <div class="highlight-line m-2 mx-0"></div>
+                </div>
+                <div class="contact-form" [formGroup]="contactForm">
+                    <input type="text" formControlName="name" class="form-control mb-2" placeholder="Name">
+                    <input type="email" formControlName="email" class="form-control mb-2" placeholder="Email">
+                    <input type="phone" formControlName="phone" class="form-control mb-2" placeholder="Phone">
+                    <textarea formControlName="message" class="form-control mb-2" placeholder="Message"></textarea>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-primary theme-btn" [disabled]="contactForm.invalid" (click)="submit()">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+
+<div class="contact-home">
+    <app-page-header [image]="image" [blogHeight]="'70vh'" [template]="contactBlogHeader"></app-page-header>
+    <app-contact-details></app-contact-details>
+</div>

@@ -1,0 +1,15 @@
+@import "variable";
+
+.client-says-home {
+    padding: 60px 0;
+    background-color: $white;
+    img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,24 @@
+@import "variable";
+
+.listings-home {
+    background-color: $white;
+    .slider {
+        height: 80vh;
+    }
+
+    .content {
+        background-color: $bg-clr;
+        padding: 20px;
+        p {
+            font-weight: 300;
+            color: $secondary-clr;
+            line-height: 1.8;
+        }
+    }
+}
+
+.exlusive-section {
+    .content {
+        height: 50vh;
+    }
+}

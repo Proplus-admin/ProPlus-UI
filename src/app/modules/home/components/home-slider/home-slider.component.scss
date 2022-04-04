@@ -1,0 +1,11 @@
+@import "variable";
+
+.slider-home {
+    height: 60vh;
+}
+
+@media screen and (max-width: 720px) {
+    .slider-home {
+        height: 80vh;
+    }
+}

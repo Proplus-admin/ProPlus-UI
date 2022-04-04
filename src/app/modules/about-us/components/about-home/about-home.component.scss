@@ -1,0 +1,13 @@
+@import 'variable';
+
+.about-home {
+    .about-section {
+        padding: 20px;
+        p {
+            margin-bottom: 20px;
+            color: $secondary-clr;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+    }
+}

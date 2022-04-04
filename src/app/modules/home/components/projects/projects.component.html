@@ -1,0 +1,16 @@
+<div class="projects-home text-center">
+    <div class="">
+        <h3> DEVELOPMENTS </h3>
+        <div class="highlight-line"></div>
+
+        <div class="row">
+            <div class="col-12 col-sm-4 sol-md-4" *ngFor="let prject of projects; let i = index">
+                <div class="project-image">
+                    <img src="../../../../../assets/images/view{{i + 1}}.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary theme-btn" routerLink="departments">VIEW ALL</button>
+    </div>
+</div>

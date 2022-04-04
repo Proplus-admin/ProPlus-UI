@@ -1,0 +1,74 @@
+@import "_overrides/bootstrap";
+@import "variable";
+
+*,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    background-color: $bg-clr;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button, button:hover, button:disabled {
+    background-color: initial;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.social-icon {
+    font-size: 18px;
+    color: $icon-light-clr;
+}
+
+.highlight-line {
+    background-color: $theme-clr;
+    height: 3px;
+    width: 40px;
+    margin: 10px auto;
+}
+
+.theme-btn {
+    background-color: rgba($color: $theme-clr, $alpha: 0.8) !important;
+    color: $white;
+    border: none;
+    border-radius: 0;
+    outline: none !important;
+    transition: 200ms ease;
+    &:hover {
+        background-color: $theme-clr !important;
+    }
+}
+
+.theme-clr {
+    color: $theme-clr
+}
+
+.theme-bg, .theme-btn:disabled {
+    background-color: $theme-clr;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+@import 'variable';
+
+.ocean-reach-home {
+    p, ul > li {
+        font-weight: 300;
+        color: $secondary-clr;
+        line-height: 1.8;
+    }
+    .slider {
+        height: 70vh;
+    }
+}

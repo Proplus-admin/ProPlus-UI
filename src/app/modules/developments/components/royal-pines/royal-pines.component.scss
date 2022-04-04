@@ -1,0 +1,19 @@
+@import "variable";
+
+.royal-pines-home {
+    p,
+    ul > li {
+        font-weight: 300;
+        color: $secondary-clr;
+        line-height: 1.8;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .royal-pines-home {
+        .slider {
+            height: 70vh;
+        }
+    }
+}

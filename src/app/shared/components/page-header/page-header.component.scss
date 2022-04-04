@@ -1,0 +1,27 @@
+@import 'variable';
+
+.page-header-home {
+    position: relative;
+    background-position: center;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $black;
+        opacity: 0.5;
+        z-index: 0;
+    }
+    .widget-content {
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}

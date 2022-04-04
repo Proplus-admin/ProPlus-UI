@@ -1,0 +1,63 @@
+<ng-template #royalPinesBlogHeader>
+    <div class="container p-5 px-3">
+        <a class="text-white" routerLink="/departments">Back to all listings</a>
+    </div>
+</ng-template>
+
+<div class="royal-pines-home">
+    <app-page-header [image]="image" [template]="royalPinesBlogHeader"></app-page-header>
+
+    <section class="bg-white">
+        <div class="container border-bottom pb-2 pt-3">
+            <div class="d-sm-flex justify-content-between">
+                <div>
+                    <h1>ROYAL PINES</h1>
+                    <h5>753 LINDFORD PIERSON HIGHWAY</h5>
+                    <h5 class="mt-2">DESCRIPTION</h5>
+                    <p>MUST SEE!! STUNNING BRAND NEW END UNIT with 2,100 sqft. 3 bedrooms + 3.5 Bath with <br>
+                        upgraded patio at the backyard located at Linford Pierson bypass - George Town, Grand Cayman</p>
+                    <h5 class="mt-2">Property Features:</h5>
+                    <ul>
+                        <li>• 3 spacious Bedrooms with 3.5 Bathrooms and 90sqft. storage room </li>
+                        <li>• Ceiling fans and walk in closets in the Master Bed Room </li>
+                        <li>• Amazing patio at the backyard with huge space and nice view </li>
+                        <li>• Top of the line Kitchen Cabinets with Quartz stone bench top and Pull Out Pantry </li>
+                        <li>• Furniture are all included! </li>
+                        <li>• PGT impact rated windows </li>
+                        <li>• Swimming Pool, Gym and Club house </li>
+                        <li>• Low Strata Fee with good Strata Management </li>
+                        <li>• NO STAMP DUTY!! </li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="theme-clr">CI 589,000</h1>
+                    <a href="mailto:info@proplusrealestate.com">
+                        <button class="btn btn-primary theme-btn">BOOK A VIEWING</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white pt-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="slider">
+                <app-slider [images]="images" slideAnimationClass="animate__fadeIn"></app-slider>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6"></div>
+                <div class="col-12 col-sm-6">
+                    <app-map-box [lat]="42.704730" [long]="-84.626270"></app-map-box>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="room-specs">
+        <app-specs [parkingSpace]="2" [bedrooms]="3" [bathroom]="3.5" area="2,100 sqft."></app-specs>
+    </div>
+</div>

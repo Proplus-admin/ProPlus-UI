@@ -1,0 +1,82 @@
+<ng-template #oceanReachHeader>
+    <div class="container p-5 px-3">
+        <a class="text-white" routerLink="/departments">Back to all listings</a>
+    </div>
+</ng-template>
+
+<div class="ocean-reach-home">
+    <app-page-header [image]="image" [template]="oceanReachHeader"></app-page-header>
+
+    <section class="p-4 bg-white">
+        <div class="container">
+            <div class="d-sm-flex justify-content-between border-bottom pb-2">
+                <div>
+                    <h1>OCEAN REACH</h1>
+                    <h5>DESCRIPTION</h5>
+                    <p>Affordable, Contemporary, Convenient in South Sound . Premium living in affordable pricing</p>
+                    <ul>
+                        <li>• 5 mins walk to South Sound Beach </li>
+                        <li>• Option of Lake or Garden View </li>
+                        <li>• Swimming pool and Club house </li>
+                        <li>• Kids Play Area </li>
+                        <li>• Modern Kitchen design </li>
+                        <li>• Modern Bathroom fittings </li>
+                        <li>• Ducked Air Condition </li>
+                        <li>• Fenced Backyard </li>
+                        <li>• Security System </li>
+                        <li>• NO STAMP DUTY </li>
+                        <li>• Available for viewing - kindly set up an appointment </li>
+                    </ul>
+                    <p>Completion Date: December 2020</p>
+                </div>
+                <div>
+                    <div class="mb-2">
+                        <a href="https://irp-cdn.multiscreensite.com/8f4dba7e/files/uploaded/OR%20Brochure.pdf"
+                            target="_blank">
+                            <button class="btn btn-primary theme-btn">DOWNLOAD BROCHURE</button>
+                        </a>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary theme-btn" routerLink="/contact">BOOK A VIEWING</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-3 mb-3 slider">
+                <app-slider [images]="sliderImags"></app-slider>
+            </div>
+            <div class="pt-3 pb-2">
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <ul>
+                            <li>- 5 mins walk to South Sound Beach </li>
+                            <li>- Option of Lake or Garden View</li>
+                            <li>- Swimming pool and Club house</li>
+                            <li>- Kids Play Area</li>
+                            <li>- Modern Kitchen design</li>
+                            <li>- Modern Bathroom fittings</li>
+                            <li>- Ducked Air Condition</li>
+                            <li>- Fenced Backyard</li>
+                            <li>- Security System</li>
+                            <li>- NO STAMP DUTY!!</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <ul>
+                            <li>- Fenced Backyard</li>
+                            <li>- Security System</li>
+                            <li>- NO STAMP DUTY!!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <div class="d-sm-flex justify-content-between">
+                    <div *ngFor="let image of images">
+                        <img [src]="image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

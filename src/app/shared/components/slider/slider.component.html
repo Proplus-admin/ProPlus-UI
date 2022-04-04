@@ -1,0 +1,18 @@
+<div class="app-slider">
+    <div>
+        <ng-container *ngIf="oldImage?.image">
+            <img [src]="oldImage?.image">
+        </ng-container>
+        <ng-container *ngIf="newImage?.image">
+            <img [src]="newImage?.image" class="animate__animated"
+                [ngClass]="newImage?.image ? slideAnimationClass : ''">
+        </ng-container>
+        <div class="slide-caption d-flex align-items-center none" [class.show-caption]="newImage?.caption">
+            <h4 class="p-2">{{newImage?.caption}}</h4>
+        </div>
+        <div class="caption" *ngIf="caption">
+            <p class="caption1">Affordable Properties</p>
+            <h1 class="caption2">FIND YOUR DREAM PROPERTY <br> IN CAYMAN ISLANDS</h1>
+        </div>
+    </div>
+</div>

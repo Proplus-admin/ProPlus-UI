@@ -1,0 +1,23 @@
+@import "variable";
+
+.agent-home {
+    margin-top: -150px;
+    position: relative;
+    z-index: 1;
+    .agent-content {
+        margin: 60px;
+        padding: 50px 0;
+        background-color: $white;
+        .agent-form {
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .agent-home {
+        .agent-content {
+            margin: 10px;
+        }
+    }
+}

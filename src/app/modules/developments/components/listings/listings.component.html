@@ -1,0 +1,64 @@
+<ng-template #listingsBlogHeader>
+    <div class="text-center p-5">
+        <h2 class="text-white">OUR LISTINGS</h2>
+        <p class="theme-clr">The Best Real Estate in Cayman Islands </p>
+        <div class="highlight-line"></div>
+    </div>
+</ng-template>
+
+
+<div class="listings-home">
+    <app-page-header [image]="image" [blogHeight]="'400px'" [template]="listingsBlogHeader"></app-page-header>
+
+    <section class="p-3 px-0">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <img [src]="image1" class="img-fluid">
+            </div>
+            <div class="col-12 col-sm-6 content">
+                <h4>Exclusive Listing</h4>
+                <h2>OCEAN REACH</h2>
+                <div class="highlight-line mx-0"></div>
+                <p>- 5 mins walk to South Sound Beach <br>
+                    - Option of Lake or Garden View <br>
+                    - Swimming pool and Club house <br>
+                    - Kids Play Area <br>
+                    - Modern Kitchen design <br>
+                    - Modern Bathroom fittings <br>
+                    - Ducked Air Condition <br>
+                    - Fenced Backyard <br>
+                    - Security System</p>
+                <p class="mt-2 mb-2">CI$489,000</p>
+                <button class="btn btn-primary theme-btn d-block mb-2" routerLink="/departments/ocean-reach">MORE
+                    DETAILS</button>
+                <a href="https://irp.cdn-website.com/8f4dba7e/files/uploaded/OR%20Brochure.pdf" target="_blank"><button
+                        class="btn btn-primary theme-btn">>> DOWNLOAD</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider">
+        <app-slider [images]="images"></app-slider>
+    </section>
+
+    <section class="p-3 px-0 exlusive-section">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <app-slider [images]="images2" slideAnimationClass="animate__fadeIn"></app-slider>
+            </div>
+            <div class="col-12 col-sm-6 content">
+                <h4>Exclusive Listing</h4>
+                <h2>DON'T MISS THIS <br>
+                    WONDERFUL OPPORTUNITY
+                </h2>
+                <div class="highlight-line mx-0"></div>
+                <p>3 beds | 3.5 Baths | 2100 sq. ft. | MLS # 409368 | CI $589,000</p>
+                <p class="mt-2">You will fall in love with this NEW CONSTRUCTION modern and fresh unit! There will be 16
+                    - 3 bedroom condos. High-end finishes and modern touches throughout. Location is prime, right off
+                    the new Linford Pearson Highway. Will include asphalt parking, driveway, swimming pool and
+                    gym/clubhouse. Stop fighting traffic!</p>
+                <button class="btn btn-primary theme-btn d-block mt-2">MORE DETAILS</button>
+            </div>
+        </div>
+    </section>
+</div>

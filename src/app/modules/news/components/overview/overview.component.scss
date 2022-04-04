@@ -1,0 +1,11 @@
+@import "variable";
+
+.overview-home {
+    background-color: $white;
+    p {
+        margin-bottom: 20px;
+        line-height: 1.8;
+        color: $secondary-clr;
+        font-weight: 300;
+    }
+}

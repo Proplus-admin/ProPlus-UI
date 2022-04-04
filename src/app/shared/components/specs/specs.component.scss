@@ -1,0 +1,25 @@
+@import 'variable';
+
+.specs-home {
+    background-color: #f3f4f6;
+    padding: 20px;
+    .row {
+        & > div {
+            border-right: 1px solid white;
+            padding: 20px;
+            .spec-icon {
+                color: $theme-clr;
+                font-size: 34px;
+            }
+            p {
+                font-size: 24px;
+            }
+            p:nth-child(2) {
+                color: $theme-clr;
+            }
+        }
+        & > div:last-child {
+            border-right: none;
+        }
+    }
+}
