@@ -22,7 +22,6 @@ export class ContactAgentComponent implements OnInit {
 
   ngOnInit(): void {
     this.contactForm = this.formBuilder.group({
-      interestedIn: '',
       location: '',
       propertyType: '',
       priceRange: '',
@@ -35,7 +34,6 @@ export class ContactAgentComponent implements OnInit {
 
   submit(): void {
     const {
-      interestedIn,
       location,
       propertyType,
       priceRange,
@@ -51,7 +49,6 @@ export class ContactAgentComponent implements OnInit {
       <p style="margin: 0;"> Name: ${name}</p>
       <p style="margin: 0;"> Phone: ${phone}</p>
       <p style="margin: 0;"> Email: ${email}</p>
-      <p style="margin: 0;"> InterestedIn: ${interestedIn}</p>
       <p style="margin: 0;"> Location: ${location}</p>
       <p style="margin: 0;"> Property Type: ${propertyType}</p>
       <p style="margin: 0;"> Price Range: ${priceRange}</p>`,
