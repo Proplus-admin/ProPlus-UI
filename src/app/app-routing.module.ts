@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ShellService } from './shell/services/shell/shell.service';
 
 const routes: Routes = [
-  { path: 'documentation', loadChildren: () => import('./modules/documentation/documentation.module').then((doc) => doc.DocumentationModule) },
+  { path: 'documentation', loadChildren: () => import('./documentation/documentation.module').then((doc) => doc.DocumentationModule) },
   ShellService.childRoutes([
     { path: '', loadChildren: () => import('./modules/home/home.module').then((home) => home.HomeModule) },
     { path: 'departments', loadChildren: () => import('./modules/developments/developments.module').then((development) => development.DevelopmentsModule) },
