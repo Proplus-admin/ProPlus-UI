@@ -29,8 +29,18 @@
 
 
 <ng-template #SliderTemplate>
+    <div class="d-flex gap-3 mb-3 justify-content-between">
+        <div class="w-100 d-flex gap-2 align-items-center">
+            <input type="checkbox" [(ngModel)]="sliderControl.caption">
+            <label>Caption</label>
+        </div>
+        <div class="w-100 d-flex gap-2 align-items-center">
+            <input type="checkbox" [(ngModel)]="sliderControl.randomTrans">
+            <label>Random Transition</label>
+        </div>
+    </div>
     <div class="slider-home">
-        <app-slider [images]="images" [caption]="true" [randomTrans]="true"></app-slider>
+        <app-slider [images]="images" [caption]="sliderControl.caption" [randomTrans]="sliderControl.randomTrans"></app-slider>
     </div>
     <hr />
 
@@ -38,23 +48,22 @@
 
 </ng-template>
 
-
 <ng-template #MapTemplate>
     <div class="d-flex gap-3 mb-3 justify-content-between">
         <div class="w-100">
             <label>Latitude</label>
-            <input type="number" class="form-control" placeholder="latitude" [(ngModel)]="mapValue.latitude">
+            <input type="number" class="form-control" placeholder="latitude" [(ngModel)]="mapControl.latitude">
         </div>
         <div class="w-100">
             <label>Longitude</label>
-            <input type="number" class="form-control" placeholder="longitude" [(ngModel)]="mapValue.longitude">
+            <input type="number" class="form-control" placeholder="longitude" [(ngModel)]="mapControl.longitude">
         </div>
         <div class="d-flex align-items-end">
             <button class="btn theme-btn" (click)="refreshMap()">Submit</button>
         </div>
     </div>
-    <div class="map-box" *ngIf="loadMap">
-        <app-map-box [lat]="mapValue.latitude" [long]="mapValue.longitude"></app-map-box>
+    <div class="map-box" *ngIf="mapControl.loadMap">
+        <app-map-box [lat]="mapControl.latitude" [long]="mapControl.longitude"></app-map-box>
     </div>
 
     <hr />

@@ -20,7 +20,7 @@ export class DocumentationHomeComponent implements OnInit {
     { tabName: 'Banner', description: 'Banner description' },
     { tabName: 'Map', description: 'Map description' },
   ];
-  activeTab = this.menuList[0];
+  activeTab = this.menuList[2];
 
   // installation
   installationHtmlContent = 
@@ -44,6 +44,10 @@ export class DocumentationHomeComponent implements OnInit {
   npm start`;
 
   // slider
+  sliderControl =  {
+    caption: true,
+    randomTrans: true,
+  };
   images = [
     { image: '../../../../../assets/images/view1.jpg' },
     { image: '../../../../../assets/images/view2.jpg' },
@@ -60,7 +64,7 @@ export class DocumentationHomeComponent implements OnInit {
   ];
   sliderHtmlContent = 
   ` # Find the component and replace the latitude and longitude 
-  <app-slider [images]="images" [caption]="true" [randomTrans]="true"></app-slider>
+  <app-slider [images]="images" [caption]="${this.sliderControl.caption}" [randomTrans]="${this.sliderControl.randomTrans}"></app-slider>
   
     # images list
     images = [
@@ -79,15 +83,15 @@ export class DocumentationHomeComponent implements OnInit {
     ];`;
 
   // map
-  mapValue = {
+  mapControl = {
     latitude: 19.300249,
     longitude: -81.375999,
+    loadMap: true,
   }
-  loadMap = true;
 
   mapHtmlContent = 
   ` # Find the component and replace the latitude and longitude
-  <app-map-box [lat]="19.300249" [long]="-81.375999"></app-map-box>`;
+  <app-map-box [lat]="${this.mapControl.latitude}" [long]="${this.mapControl.longitude}"></app-map-box>`;
 
   constructor() { }
 
@@ -103,9 +107,9 @@ export class DocumentationHomeComponent implements OnInit {
 
   // map
   refreshMap(): void {
-    this.loadMap = false;
+    this.mapControl.loadMap = false;
     setTimeout(() => {
-      this.loadMap = true;
+      this.mapControl.loadMap = true;
     }, 100);
   }
 
