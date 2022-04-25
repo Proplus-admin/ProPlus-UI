@@ -1,0 +1,33 @@
+@import "variable";
+
+.documentation-home {
+    .sidebar-menu {
+        background-color: $white;
+        width: 250px;
+        height: 100vh;
+
+        .logo {
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .list-group-item {
+            cursor: pointer;
+            &.active {
+                background-color: $theme-clr;
+                border-color: $theme-clr;
+            }
+        }
+    }
+
+    .view-port {
+        height: 100vh;
+        overflow-y: auto;
+
+        .slider-home {
+            height: 500px;
+        }
+    }
+}
+
+
