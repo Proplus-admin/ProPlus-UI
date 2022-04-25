@@ -17,10 +17,9 @@ export class DocumentationHomeComponent implements OnInit {
     { tabName: 'Installation', description: 'Installation description' },
     { tabName: 'Menu', description: 'Menu description' },
     { tabName: 'Slider', description: 'Slide description' },
-    { tabName: 'Banner', description: 'Banner description' },
     { tabName: 'Map', description: 'Map description' },
   ];
-  activeTab = this.menuList[2];
+  activeTab = this.menuList[0];
 
   // installation
   installationHtmlContent = 
@@ -42,6 +41,14 @@ export class DocumentationHomeComponent implements OnInit {
   
   # start the server
   npm start`;
+
+  // menu
+  menuHtmlContent = 
+  ` # adding new url
+  eg:
+  1. ng g module test
+  2. add menu path in app-routing.module.ts
+  3. add url in the li menu in the shell-home.html`;
 
   // slider
   sliderControl =  {

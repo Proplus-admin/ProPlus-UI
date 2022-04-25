@@ -15,9 +15,11 @@
             <hr class="my-4">
             <ng-continer *ngIf="activeTab.tabName === 'Installation'" [ngTemplateOutlet]="installationTemplate">
             </ng-continer>
-            <ng-continer *ngIf="activeTab.tabName === 'Map'" [ngTemplateOutlet]="MapTemplate">
+            <ng-continer *ngIf="activeTab.tabName === 'Menu'" [ngTemplateOutlet]="menuTemplate">
             </ng-continer>
             <ng-continer *ngIf="activeTab.tabName === 'Slider'" [ngTemplateOutlet]="SliderTemplate">
+            </ng-continer>
+            <ng-continer *ngIf="activeTab.tabName === 'Map'" [ngTemplateOutlet]="MapTemplate">
             </ng-continer>
         </div>
     </div>
@@ -27,6 +29,9 @@
     <app-docs-code [content]="installationHtmlContent"></app-docs-code>
 </ng-template>
 
+<ng-template #menuTemplate>
+    <app-docs-code [content]="menuHtmlContent"></app-docs-code>
+</ng-template>
 
 <ng-template #SliderTemplate>
     <div class="d-flex gap-3 mb-3 justify-content-between">
