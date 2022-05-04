@@ -23,6 +23,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Running Linter
 
 Run `ng lint` to execute the linter via [TSLint](https://palantir.github.io/tslint/).
+
+## Design Patterns
 ### Component Example
 
 Notes:
