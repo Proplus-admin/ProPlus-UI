@@ -55,7 +55,7 @@ export class DocumentationHomeComponent implements OnInit {
       - <li><a routerLink="test" routerLinkActive="active">Test</a> <span>/</span></li>  
 
   # Adding new component
-  1. cd src/app/test
+  1. cd src/app/modules/test
   2. ng g c components/test-home
   3. add menu path in src/app/modules/test/test-routing.module.ts
       - { path: '', component: TestHomeComponent },
