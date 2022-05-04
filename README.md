@@ -4,6 +4,12 @@ ProPlus Realestate
 # Documentation
 - [Documentation](https://www.proplusrealestate.ky/documentation)
 
+## Install VS code and Git.
+
+https://code.visualstudio.com/download
+
+https://git-scm.com/download/win
+
 ## NPM Package Install
 
 Run `npm install` to install all dependencies for the project. 
