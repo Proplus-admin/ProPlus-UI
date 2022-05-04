@@ -45,10 +45,21 @@ export class DocumentationHomeComponent implements OnInit {
   // menu
   menuHtmlContent = 
   ` # adding new url
-  eg:
-  1. ng g module test
-  2. add menu path in app-routing.module.ts
-  3. add url in the li menu in the shell-home.html`;
+  1. cd src/app/modules
+  2. ng g module test --routing 
+      - src/app/modules/test/test-routing.module.ts
+      - src/app/modules/test/test.module.ts
+  3. add menu path in src/app/app-routing.module.ts
+      - { path: 'test', loadChildren: () => import('./modules/test/test.module').then((test) => test.TestModule) },
+  4. add url in the li menu in the src/app/shell/components/shell-home/shell-home.component.html
+      - <li><a routerLink="test" routerLinkActive="active">Test</a> <span>/</span></li>  
+
+  # Adding new component
+  1. cd src/app/test
+  2. ng g c components/test-home
+  3. add menu path in src/app/modules/test/test-routing.module.ts
+      - { path: '', component: TestHomeComponent },
+  `;
 
   // slider
   sliderControl =  {
