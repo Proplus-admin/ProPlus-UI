@@ -53,16 +53,15 @@ src
   └─app
   │ └─core
   │ └─modules
-  │ │ └─developments
+  │ │ └─home
   │ │ │ └─components
-  │ │ │ └─models
   │ └─shared
   │ └─shell
   └─assets
   │ └─styles
   │   │ _variable.scss
   │   └─_overrides
-  └─environments
+  └─environment
     │ environment.prod.ts
     │ environment.ts
 ```
