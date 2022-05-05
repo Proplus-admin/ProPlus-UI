@@ -21,7 +21,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name proplus --auth-mode login -d 'abc' -s .
+            az storage blob upload-batch --account-name proplus --auth-mode key --account-key KR70ptGw3l9bFxYKQVdq+4lxTPCpjz6tLjsKdBr3G8KJk70bTtfFLHfZf2AuIqDX6BwLMvXwTdp4+AStuHs7Og== -d 'abc' -s .
 
   # Azure logout
     - name: logout
