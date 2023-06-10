@@ -15,6 +15,7 @@ export class DocumentationHomeComponent implements OnInit {
 
   menuList: IMenuList[] = [
     { tabName: 'Installation', description: 'Installation description' },
+    { tabName: 'Deployement', description: 'Deployement description' },
     { tabName: 'Menu', description: 'Menu description' },
     { tabName: 'Slider', description: 'Slide description' },
     { tabName: 'Map', description: 'Map description' },
