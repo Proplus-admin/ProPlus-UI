@@ -12,19 +12,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: azure/login@v1
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
       with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+        node-version: '14'
+        
+    - name: Install dependencies
+      run: npm install
 
-    - name: Upload to blob storage
-      uses: azure/CLI@v1
-      with:
-        inlineScript: |
-            az storage blob upload-batch --account-name proplus --auth-mode key --account-key KR70ptGw3l9bFxYKQVdq+4lxTPCpjz6tLjsKdBr3G8KJk70bTtfFLHfZf2AuIqDX6BwLMvXwTdp4+AStuHs7Og== -d 'abc' -s .
-
-  # Azure logout
-    - name: logout
-      run: |
-            az logout
-      if: always()
+    - name: Build Angular app
+      run: ng build --prod
