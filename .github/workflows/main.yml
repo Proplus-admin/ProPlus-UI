@@ -32,4 +32,4 @@ jobs:
     - name: Deploy to Azure Storage
       run: |
         az login --service-principal --username ${{ secrets.AZURE_CLIENT_ID }} --password ${{ secrets.AZURE_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_TENANT_ID }}
-        az storage blob upload-batch --destination \$web --source dist --account-name proplus --connection-string "https://proplus.blob.core.windows.net/?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-06-12T10:06:28Z&st=2023-06-12T02:06:28Z&spr=https&sig=GVpMeX2UbXDZJ%2BTybIfYL2M5AEzRbjqe9FngGLQsnrQ%3D"
+        az storage blob upload-batch --destination \$web --source dist --account-name proplus --connection-string "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=proplus;AccountKey=KR70ptGw3l9bFxYKQVdq+4lxTPCpjz6tLjsKdBr3G8KJk70bTtfFLHfZf2AuIqDX6BwLMvXwTdp4+AStuHs7Og==;BlobEndpoint=https://proplus.blob.core.windows.net/;FileEndpoint=https://proplus.file.core.windows.net/;QueueEndpoint=https://proplus.queue.core.windows.net/;TableEndpoint=https://proplus.table.core.windows.net/"
