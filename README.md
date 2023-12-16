@@ -1,8 +1,8 @@
 # ProPlus-UI
-ProPlus Realestate
+PropertyPlus Realestate
 
 # Documentation
-- [Documentation](https://www.proplusrealestate.ky/documentation)
+- [Documentation](https://www.propertyplusrealestate.com/documentation)
 
 ## one time changes
 ## Install VS code and Git.
